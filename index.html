@@ -10,12 +10,21 @@
 
 <body>
   <script src="./videosub.js"></script>
-  <video class="video-js" controls preload="auto" width="1200" height="600" crossorigin="anonymous" data-setup='{}'
-    style="width: 75%; display: flex; margin-left: auto; margin-right: auto;">
-    <source src="https://res.cloudinary.com/dflulaosf/video/upload/v1645009387/merged_cxemcd.mp4" type="video/mp4">
+  <div>
+    <video class="video-js" controls preload="auto" width="1200" height="600" crossorigin="anonymous" data-setup='{}'
+    style="transform: translate(-50%, -50%); position: absolute; top: 50%; left: 50%;">
+    <source src="https://res.cloudinary.com/dflulaosf/video/upload/v1645010760/merged_1_evm0j4.mp4" type="video/mp4">
     <track kind="captions" src="https://res.cloudinary.com/dflulaosf/raw/upload/v1645009425/merged_4_nwii8r.srt"
       lang="en" label="English" default>
   </video>
+  </div>
+  <script>
+    window.onload = (event) => {
+    document.getElementsByTagName('div')[1].style.position = 'initial';
+    console.log('page is fully loaded');
+  };
+  </script>
 </body>
+
 
 </html>
